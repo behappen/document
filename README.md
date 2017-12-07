@@ -1,4 +1,4 @@
-# macOS 10.13.1 python 环境搭建
+# macOS 10.13.1 python selenium chromedriver
 ## 安装python和添加环境变量
 mac本身自带python2.7\
 自己安装最新版本python3.6.3\
