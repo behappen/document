@@ -29,7 +29,7 @@
 ## 安装python和添加环境变量
 mac本身自带python2.7\
 自己安装最新版本python3.6.3\
-打开终端输入 - open ~/.bash_profile\
+打开终端输入：open ~/.bash_profile\
 \
 alias python="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6"（python3.6.3安装路径）\
 如何查看python安装路径：\
@@ -57,7 +57,7 @@ python -m pip install selenium
 解压将chromedriver拖拽到 /usr/local/bin/目录下\
 说明：因为/usr/bin目录下没有写的权限，所以chromedriver文件不能拖到这个目录下边，所以把chromedriver文件放在/usr/local/bin目录下，因为环境变量的PTAH中是PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin（path不需要进行修改操作），这样会优先调用/usr/local/bin目录下的程序
 # selenium第一个脚本
-#!/user/bin/env python
+#!/user/bin/env python\
 #-*-coding:utf-8-*-
 
 from selenium import webdriver
