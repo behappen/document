@@ -58,12 +58,12 @@ python -m pip install selenium
 说明：因为/usr/bin目录下没有写的权限，所以chromedriver文件不能拖到这个目录下边，所以把chromedriver文件放在/usr/local/bin目录下，因为环境变量的PTAH中是PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin（path不需要进行修改操作），这样会优先调用/usr/local/bin目录下的程序
 # selenium第一个脚本
 #!/user/bin/env python
-# -*-coding:utf-8-*-
+#-*-coding:utf-8-*-
 
 from selenium import webdriver
 
-driver = webdriver.Chrome()
-driver.get("http://www.baidu.com")
-driver.find_element_by_id('kw').send_keys('selenium')
-driver.find_element_by_id('su').click()
+driver = webdriver.Chrome()\
+driver.get("http://www.baidu.com")\
+driver.find_element_by_id('kw').send_keys('selenium')\
+driver.find_element_by_id('su').click()\
 #driver.quit()
