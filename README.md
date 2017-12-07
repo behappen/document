@@ -3,13 +3,13 @@
 mac本身自带python2.7\
 自己安装最新版本python3.6.3\
 打开终端输入：open ~/.bash_profile\
-\
+
 alias python="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6"（python3.6.3安装路径）\
 如何查看python安装路径：\
-终端输入python或者python3（当输入python版本为2.7的时候）
+终端输入python或者python3（当输入python版本为2.7的时候）\
 import sys\
 print(sys.path)\
-\
+
 终端执行：source ~/.bash_profile 或者重启终端（重新加载配置文件）\
 # 安装pip
 因为python3.5版本之后都自带pip，直接安装pip就行，在用户根目录下，执行sudo easy_install pip
