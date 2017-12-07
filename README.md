@@ -8,7 +8,7 @@ alias python="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6"�
 如何查看python安装路径：\
 终端输入python或者python3（当输入python版本为2.7的时候）\
 import sys\
-print(sys.path)\
+print(sys.path)
 
 终端执行：source ~/.bash_profile 或者重启终端（重新加载配置文件）
 # 安装pip
