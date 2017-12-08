@@ -41,16 +41,7 @@ driver.find_element_by_id('kw').send_keys('selenium')\
 driver.find_element_by_id('su').click()\
 #driver.quit()
 
-
-# other
-
-打包的时候使用了参数\
--c -F,是一闪而过，用-w -F的话cmd框都没出来，我的py脚本不是带界面的。\
--D, --onedir  创建一个目录，包含exe文件和依赖文件，这是默认选项。\
--F, --onefile 创建一个exe文件，所有依赖文件都打包进了这个exe文件，这个exe会比较大，但是我觉得方便使用。\
--c, --console, --nowindowed 控制台，无界面，默认选项。\
--w, --windowed, --noconsole 窗口无控制台。
-
+# python文件定位元素
 1.id定位：find_element_by_id(self, id_)\
 2.name定位：find_element_by_name(self, name)\
 3.class定位：find_element_by_class_name(self, name)\
@@ -66,4 +57,28 @@ driver.find_element_by_id('su').click()\
 13.link复数定位find_elements_by_link_text(self, text)\
 14.partial_link复数定位find_elements_by_partial_link_text(self, link_text)\
 15.xpath复数定位find_elements_by_xpath(self, xpath)\
-16.css复数定位find_elements_by_css_selector(self, css_selector\
+16.css复数定位find_elements_by_css_selector(self, css_selector)
+
+# 使用pyinstaller打包python程序
+安装：pip install pyinstaller\
+终端执行：pyinstaller Demo.py\
+
+-F　　　　制作独立的可执行程序\
+-D　　　　制作出的档案存放在同一个文件夹下（默认值）\
+-K　　　　包含TCL/TK（对于使用了TK的，最好加上这个选项，否则在未安装TK的电脑上无法运行）\
+-w　　　  制作窗口程序\
+-c　　　　制作命令行程序（默认）\
+-X　　　　制作使用UPX压缩过的可执行程序（推荐使用这个选项，需要下载UPX包，解压后upx.exe放在Python(非PyInstaller)安装目录下，下载upx308w.zip）\
+-o DIR　　指定输出SPEC文件路径（这也决定了最后输出的exe文件路径）\
+--icon=[ICO文件路径] 指定程序图标\
+-v [指定文件] 指定程序版本信息\
+-n [指定程序名] 指定程序名称
+
+# other
+
+打包的时候使用了参数\
+-c -F,是一闪而过，用-w -F的话cmd框都没出来，我的py脚本不是带界面的。\
+-D, --onedir  创建一个目录，包含exe文件和依赖文件，这是默认选项。\
+-F, --onefile 创建一个exe文件，所有依赖文件都打包进了这个exe文件，这个exe会比较大，但是我觉得方便使用。\
+-c, --console, --nowindowed 控制台，无界面，默认选项。\
+-w, --windowed, --noconsole 窗口无控制台。
