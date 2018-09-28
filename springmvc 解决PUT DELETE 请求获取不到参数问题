@@ -1,4 +1,4 @@
-web.xml新增配置：
+# web.xml新增配置：
 <filter>
 	  <filter-name>HttpMethodFilter</filter-name>
 	  <filter-class>org.springframework.web.filter.HttpPutFormContentFilter</filter-class>
